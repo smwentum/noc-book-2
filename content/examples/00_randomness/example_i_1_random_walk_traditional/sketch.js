@@ -27,12 +27,12 @@ class Walker {
   }
 
   step() {
-    const choice = floor(random(4));
-    if (choice == 0) {
+    const choice = floor(random(7));
+    if (choice < 2) {
       this.x++;
-    } else if (choice == 1) {
+    } else if (choice  < 3) {
       this.x--;
-    } else if (choice == 2) {
+    } else if (choice < 6) {
       this.y++;
     } else {
       this.y--;
